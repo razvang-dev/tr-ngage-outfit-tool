@@ -1,0 +1,35 @@
+{
+  "format": "TR N-Gage Outfit Tool named diagnostic face groups",
+  "version": 1,
+  "reference_hashes": {
+    "new_tpage.tpa": "0c0f7a8fb1ccd43d45a088b4c589e6135b396823a5fe8ef8ffada962fe829daa",
+    "retexture.dat": "28cf4e94bf067d6d72122d42b1d14d11963d95b7f674a422dfa93a54d44c21bf",
+    "lara.mesh": "5efbf356810f0e26cfe8fc0f53341dd865314672f2abc2047a4d00f13094b2db"
+  },
+  "arm_skin_descriptor": {
+    "local_code": 18,
+    "purpose": "one-texel arm/skin reference used by the diagnostic contrast examples"
+  },
+  "groups": {
+    "TORSO_BODY": {
+      "mesh_index": 7,
+      "original_local_codes": [1, 35, 36, 37, 39, 40, 41, 42, 43, 44, 45, 46],
+      "note": "Torso/body/top descriptors selected for the contrast test; backpack/accessory descriptors were deliberately not changed."
+    },
+    "PANTS_LEGS": {
+      "mesh_indices": [1, 2, 4, 5],
+      "note": "Left/right thigh and calf/knee meshes."
+    },
+    "PELVIS_MAIN_SHORTS": {
+      "mesh_index": 0,
+      "face_indices": [0, 1, 2, 3, 4, 5, 8, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21],
+      "note": "Main pelvis/shorts faces remapped in Example 2."
+    },
+    "BELT_UPPER_WAIST": {
+      "mesh_index": 0,
+      "face_indices": [6, 7, 9, 16, 17, 22, 23],
+      "note": "Upper waistband/belt faces preserved in Example 2."
+    }
+  },
+  "important": "The pelvis is one mesh object, but it contains multiple independently textured faces. Object-level editing is therefore too coarse for belt isolation."
+}
