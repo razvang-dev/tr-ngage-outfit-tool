@@ -1,0 +1,13 @@
+{
+  "description": "Output hashes from the Beta Lara Test 2 build that was confirmed in-game on EKA2L1/N-Gage-target behavior by the user.",
+  "source_wad_sha256": "bdb42b939f5367d9ddf737c96f98024994b751a49d600d7259f1f50201aeb0ec",
+  "ngage_lara_mesh_sha256": "5efbf356810f0e26cfe8fc0f53341dd865314672f2abc2047a4d00f13094b2db",
+  "expected_new_tpage_tpa_sha256": "0c8730dbe46ff117a74f1ec0c8ab7b9ac027736630ef8da146cf3ec4f513eab3",
+  "expected_retexture_dat_sha256": "5a46dfe6611915517d8919937678aaf7540e7985155484e387ccff24a2e2b343",
+  "expected_tpa_size": 32768,
+  "expected_retexture_size": 9006,
+  "mapped_primary_faces": 335,
+  "primary_faces": 375,
+  "descriptor_count": 92,
+  "palette_groups": 8
+}
