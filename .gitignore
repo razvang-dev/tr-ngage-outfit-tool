@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local game inputs and generated texture pages
+*.tpa
+*.wad
+*.wad2
+lara.mesh
+*.nax
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
