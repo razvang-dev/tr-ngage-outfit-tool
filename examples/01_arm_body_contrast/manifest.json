@@ -1,0 +1,65 @@
+{
+  "test": "AoD arm-texture body contrast test",
+  "arm_texture_local_code": 18,
+  "arm_descriptor_table_index": 82,
+  "arm_descriptor_uv": [
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ]
+  ],
+  "arm_descriptor_clut_xy": [
+    192,
+    510
+  ],
+  "torso_top_original_codes_replaced": [
+    1,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "pants_mesh_indices": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "pants_mesh_names": [
+    "left_thigh",
+    "left_knee_calf",
+    "right_thigh",
+    "right_knee_calf"
+  ],
+  "changed_faces": 76,
+  "changes_by_reason": {
+    "pants_to_arm_texture": 56,
+    "top_to_arm_texture": 20
+  },
+  "unchanged_accessory_policy": "pelvis/belt region, backpack descriptors, boots, hands, head and weapon variants deliberately preserved",
+  "new_tpage_is_byte_identical_to_stock_aod": true,
+  "stock_tpa_sha256": "0c0f7a8fb1ccd43d45a088b4c589e6135b396823a5fe8ef8ffada962fe829daa",
+  "stock_retexture_sha256": "28cf4e94bf067d6d72122d42b1d14d11963d95b7f674a422dfa93a54d44c21bf",
+  "modified_retexture_sha256": "f3865542fba51817dea740db19715d445dfa7c6a2e30b6d67c931b923909a2d2",
+  "lara_mesh_sha256": "5efbf356810f0e26cfe8fc0f53341dd865314672f2abc2047a4d00f13094b2db",
+  "generated_retexture_size": 9006
+}
