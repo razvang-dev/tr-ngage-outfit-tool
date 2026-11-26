@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.4.1
+
+- Added an About button and dialog to the GUI with developer credit, version, copyright, MIT license information and a GitHub repository link.
+- Fixed an existing Tkinter startup error caused by the weapon/holster option BooleanVar initialization.
+- Updated the application version, README and quick-start guide.
+- No changes to conversion, serialization or texture-editing algorithms.
+
 ## v0.4.0
 
 ### Public source release packaging

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TR N-Gage Outfit Tool v0.4.0
+TR N-Gage Outfit Tool v0.4.1
 
 Hardware-proven conversion path:
   classic Tomb Raider WAD (file id 129)
@@ -30,7 +30,7 @@ from collections import Counter, defaultdict
 
 import wad2_support as wad2
 
-VERSION = "0.4.0"
+VERSION = "0.4.1"
 PRIMARY_NAMES = [
     'pelvis','left_thigh','left_knee_calf','left_ankle_foot',
     'right_thigh','right_knee_calf','right_ankle_foot','torso',

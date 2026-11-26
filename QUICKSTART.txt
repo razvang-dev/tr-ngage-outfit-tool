@@ -1,9 +1,10 @@
-TR N-Gage Outfit Tool v0.4.0 - QUICK START
+TR N-Gage Outfit Tool v0.4.1 - QUICK START
 
 GUI
 ---
 Windows: run_gui.bat
 Linux/WSL: ./run_gui.sh
+Click About for version, developer credit, license and repository link.
 
 WAD2
 ----

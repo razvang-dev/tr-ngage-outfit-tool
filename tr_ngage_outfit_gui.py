@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Tk GUI for TR N-Gage Outfit Tool v0.4.0. No third-party modules."""
+"""Tk GUI for TR N-Gage Outfit Tool v0.4.1. No third-party modules."""
 from pathlib import Path
-import json, threading, os, sys, subprocess
+import json, threading, os, sys, subprocess, webbrowser
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import tr_ngage_outfit as core
@@ -10,11 +10,37 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title(f"TR N-Gage Outfit Tool v{core.VERSION}")
-        self.geometry("840x650"); self.minsize(720,560)
+        self.geometry("840x690"); self.minsize(720,600)
+        footer=ttk.Frame(self); footer.pack(side='bottom',fill='x',padx=8,pady=(0,8))
+        ttk.Button(footer,text='About',command=self._show_about).pack(side='right')
         nb=ttk.Notebook(self); nb.pack(fill='both',expand=True,padx=8,pady=8)
         self.wad_tab=ttk.Frame(nb); self.wad2_tab=ttk.Frame(nb); self.tex_tab=ttk.Frame(nb); self.examples_tab=ttk.Frame(nb)
         nb.add(self.wad_tab,text='Classic WAD'); nb.add(self.wad2_tab,text='WAD2 Lab'); nb.add(self.tex_tab,text='Texture Editor'); nb.add(self.examples_tab,text='Examples')
         self._build_wad_tab(); self._build_wad2_tab(); self._build_tex_tab(); self._build_examples_tab()
+
+    def _show_about(self):
+        dialog=tk.Toplevel(self)
+        dialog.title('About TR N-Gage Outfit Tool')
+        dialog.transient(self)
+        dialog.resizable(False,False)
+        panel=ttk.Frame(dialog,padding=24); panel.pack(fill='both',expand=True)
+        ttk.Label(panel,text='TR N-Gage Outfit Tool',font=('TkDefaultFont',14,'bold')).pack(pady=(0,4))
+        ttk.Label(panel,text=f'Version {core.VERSION}').pack(pady=(0,12))
+        ttk.Label(panel,text='Developed by RazvanG',font=('TkDefaultFont',10,'bold')).pack(pady=(0,12))
+        ttk.Label(panel,text='Outfit modding and reverse-engineering toolchain for Tomb Raider on Nokia N-Gage.',
+                  wraplength=340,justify='center').pack(pady=(0,12))
+        ttk.Label(panel,text='Copyright © 2026 RazvanG').pack()
+        ttk.Label(panel,text='Original project code released under the MIT License.').pack(pady=(0,12))
+        ttk.Button(panel,text='GitHub Repository',command=lambda:webbrowser.open(
+            'https://github.com/razvang-dev/tr-ngage-outfit-tool')).pack(pady=(0,12))
+        close=ttk.Button(panel,text='Close',command=dialog.destroy); close.pack()
+        dialog.bind('<Escape>',lambda event:dialog.destroy())
+        dialog.update_idletasks()
+        x=self.winfo_rootx()+(self.winfo_width()-dialog.winfo_reqwidth())//2
+        y=self.winfo_rooty()+(self.winfo_height()-dialog.winfo_reqheight())//2
+        dialog.geometry(f'+{max(0,x)}+{max(0,y)}')
+        dialog.grab_set()
+        close.focus_set()
 
     def _browse_file(self,var,types):
         p=filedialog.askopenfilename(filetypes=types)
@@ -51,7 +77,7 @@ class App(tk.Tk):
         log.insert('end',json.dumps(result,indent=2)+'\nSUCCESS\n'); log.see('end'); messagebox.showinfo('Complete',done_message)
 
     def _build_wad_tab(self):
-        f=self.wad_tab; self.wad=tk.StringVar(); self.lara=tk.StringVar(); self.out=tk.StringVar(); self.weapon=tk.BooleanVar(False)
+        f=self.wad_tab; self.wad=tk.StringVar(); self.lara=tk.StringVar(); self.out=tk.StringVar(); self.weapon=tk.BooleanVar(value=False)
         ttk.Label(f,text='Hardware-proven classic WAD → N-Gage outfit conversion',font=('TkDefaultFont',10,'bold')).grid(row=0,column=0,columnspan=3,sticky='w',padx=8,pady=(10,4))
         self._entryrow(f,1,'Classic WAD (.wad):',self.wad,None,[('Classic Tomb Raider WAD','*.wad'),('All files','*')])
         self._entryrow(f,2,'N-Gage lara.mesh:',self.lara,None,[('lara.mesh','*.mesh'),('All files','*')])

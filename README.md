@@ -1,4 +1,4 @@
-# TR N-Gage Outfit Tool v0.4.0
+# TR N-Gage Outfit Tool v0.4.1
 
 A research/modding toolchain for custom Lara outfits in the original Nokia N-Gage release of **Tomb Raider**.
 
@@ -41,6 +41,12 @@ The reverse-engineered runtime model is established by successful tests:
 - face-level pelvis edits can isolate the belt from the pants even though both belong to the same pelvis mesh object.
 
 See `docs/BODY-ACCESSORY-SEPARATION.md` for the diagnostic examples.
+
+## New in v0.4.1
+
+- Added an About button to the GUI with developer credit, version, copyright, license and a link to the GitHub repository.
+- Fixed a Tkinter startup error in the Classic WAD tab.
+- Conversion and editing functionality is unchanged from v0.4.0.
 
 ## New in v0.4
 
