@@ -1,0 +1,35 @@
+TR N-Gage Outfit Tool v0.4.0 - QUICK START
+
+GUI
+---
+Windows: run_gui.bat
+Linux/WSL: ./run_gui.sh
+
+WAD2
+----
+1. Open WAD2 Lab.
+2. Choose a .wad2 and your original N-Gage lara.mesh.
+3. Click Analyze WAD2.
+4. Grade A/B: Convert Compatible Outfit.
+5. Grade C: Export Geometry Lab instead.
+
+Classic WAD
+-----------
+Choose a classic .wad + lara.mesh, Analyze, then Convert.
+
+No-WAD texture editing
+----------------------
+Use Texture Editor to export a working new_tpage.tpa + retexture.dat + lara.mesh into an editable workspace.
+Edit texture_edit.png without resizing, then Import Edited Texture.
+
+Installation
+------------
+Back up originals first.
+Copy generated new_tpage.tpa and retexture.dat to:
+E:\System\Apps\tombraider\data\deldata\
+
+Leave lara.mesh unchanged for all v0.3 texture-only conversions.
+
+EXPERIMENTAL GEOMETRY (v0.4):
+python tr_ngage_outfit.py build-wad2-geometry model.wad2 --lara-mesh lara.mesh -o geometry_bundle
+This output is special-path laboratory data until runtime activation is finished. Read EXPERIMENTAL-NOTICE.txt.

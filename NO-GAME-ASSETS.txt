@@ -1,0 +1,5 @@
+The core tool source does not require bundled Tomb Raider game assets.
+
+The public v0.4.0 package omits both unchanged stock AoD new_tpage.tpa files. The diagnostic examples retain modified retexture.dat files, exported mesh/UV and texture references, research data, and screenshots. These are derived from reference game assets and are not covered by the source-code MIT license. No permission to redistribute third-party material is granted by this project.
+
+Supply your own original game files for conversion, editing and example regeneration. See examples/README.md and THIRD-PARTY-NOTICE.md.
