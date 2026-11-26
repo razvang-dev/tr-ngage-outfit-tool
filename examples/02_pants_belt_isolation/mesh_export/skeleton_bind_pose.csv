@@ -1,0 +1,16 @@
+mesh_index,mesh_name,abs_x,abs_y_tr,abs_z,obj_x,obj_y_up,obj_z
+0,pelvis,0,0,0,0,0,0
+1,left_thigh,-42,20,2,-42,-20,2
+2,left_knee_calf,-33,205,5,-33,-205,5
+3,left_ankle_foot,-32,397,-3,-32,-397,-3
+4,right_thigh,43,20,2,43,-20,2
+5,right_knee_calf,33,205,4,33,-205,4
+6,right_ankle_foot,33,398,2,33,-398,2
+7,torso,-1,-49,11,-1,49,11
+8,right_shoulder_upper_arm,58,-191,-1,58,191,-1
+9,right_elbow_lower_arm,68,-96,-3,68,96,-3
+10,right_wrist_hand,69,5,-4,69,-5,-4
+11,left_shoulder_upper_arm,-58,-192,-1,-58,192,-1
+12,left_elbow_lower_arm,-67,-94,-3,-67,94,-3
+13,left_wrist_hand,-68,5,-4,-68,-5,-4
+14,head,1,-247,-12,1,247,-12
