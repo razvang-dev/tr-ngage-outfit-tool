@@ -1,0 +1,95 @@
+{
+  "test": "AoD arm-texture body + pelvis-pants contrast test with preserved upper belt band",
+  "arm_texture_local_code": 18,
+  "arm_descriptor_table_index": 82,
+  "arm_descriptor_uv": [
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ],
+    [
+      240,
+      26
+    ]
+  ],
+  "arm_descriptor_clut_xy": [
+    192,
+    510
+  ],
+  "torso_top_original_codes_replaced": [
+    1,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "pants_mesh_indices": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "pelvis_mesh_index": 0,
+  "pelvis_faces_remapped_to_arm": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21
+  ],
+  "pelvis_upper_belt_faces_preserved": [
+    6,
+    7,
+    9,
+    16,
+    17,
+    22,
+    23
+  ],
+  "pants_mesh_names": [
+    "left_thigh",
+    "left_knee_calf",
+    "right_thigh",
+    "right_knee_calf"
+  ],
+  "changed_faces": 93,
+  "changes_by_reason": {
+    "pelvis_pants_to_arm_texture": 17,
+    "pants_to_arm_texture": 56,
+    "top_to_arm_texture": 20
+  },
+  "unchanged_accessory_policy": "upper pelvis belt/waist-band faces, backpack descriptors, boots, hands, head and weapon variants deliberately preserved",
+  "new_tpage_is_byte_identical_to_stock_aod": true,
+  "stock_tpa_sha256": "0c0f7a8fb1ccd43d45a088b4c589e6135b396823a5fe8ef8ffada962fe829daa",
+  "stock_retexture_sha256": "28cf4e94bf067d6d72122d42b1d14d11963d95b7f674a422dfa93a54d44c21bf",
+  "modified_retexture_sha256": "89dcf58f119a8bf848bf8a964221f600982e23808a5039d1339fae06e2557965",
+  "lara_mesh_sha256": "5efbf356810f0e26cfe8fc0f53341dd865314672f2abc2047a4d00f13094b2db",
+  "generated_retexture_size": 9006
+}
