@@ -246,8 +246,6 @@ Original project software and associated original documentation are licensed und
 
 ## Credits & Greetings
 
-To everyone keeping the Nokia N-Gage alive, mupf.dev & Vanessa Summers!
+To everyone keeping the Nokia N-Gage alive!
 
 Visit the official Nokia N-Gage Discord at [https://discord.gg/wm7bYRErfZ](https://discord.gg/wm7bYRErfZ)
-
-PS: This is AI slop :P
