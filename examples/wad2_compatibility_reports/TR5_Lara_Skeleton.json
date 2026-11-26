@@ -1,0 +1,75 @@
+{
+  "tool": "TR N-Gage Outfit Tool",
+  "version": "0.3.0",
+  "mode": "wad2_analysis",
+  "file": "TR5_Lara_Skeleton.wad2",
+  "wad2_sha256": "d3ebd11f9be65570971549cadf297e0abec18576a85565987963852f1678ea58",
+  "container_version": 0,
+  "suggested_game_version": 18,
+  "texture_count": 20,
+  "moveable_count": 2,
+  "selected_object_id": 12,
+  "selected_role_hint": "LARA_SKIN",
+  "selected_grade": "C",
+  "recommended_mode": "geometry-replacement-required",
+  "selected_topology_matches": 6,
+  "selected_topology_total": 375,
+  "selected_topology_coverage": 0.016,
+  "selected_vertex_count_matches": 2,
+  "selected_exact_position_meshes_after_y_flip": 0,
+  "selected_used_textures": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "candidates": [
+    {
+      "object_id": 12,
+      "role_hint": "LARA_SKIN",
+      "vertex_count_matches": 2,
+      "exact_position_meshes_after_y_flip": 0,
+      "topology_matches": 6,
+      "topology_total": 375,
+      "topology_coverage": 0.016,
+      "grade": "C",
+      "recommended_mode": "geometry-replacement-required",
+      "used_textures": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": 14,
+      "role_hint": "LARA_SCREAM",
+      "vertex_count_matches": 0,
+      "exact_position_meshes_after_y_flip": 0,
+      "topology_matches": 28,
+      "topology_total": 375,
+      "topology_coverage": 0.07466666666666667,
+      "grade": "C",
+      "recommended_mode": "geometry-replacement-required",
+      "used_textures": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ]
+}
